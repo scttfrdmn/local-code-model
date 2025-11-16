@@ -247,6 +247,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Train/validation/test splitting strategies (random and temporal splits)
     - Efficient data loading and batching with Go implementations
     - End-to-end production pipeline orchestrating all preprocessing steps
+  - Benchmarking and performance analysis guide (`docs/benchmarking-and-performance-analysis.md`)
+    - Benchmarking fundamentals (measurement best practices, warm-up runs, statistical rigor)
+    - Key performance metrics (latency, throughput, MFU, memory bandwidth, arithmetic intensity)
+    - Running Go benchmarks (basic benchmarks, sub-benchmarks, comparing results with benchstat)
+    - Profiling tools (CPU profiling with pprof, memory profiling, trace analysis, flame graphs)
+    - Memory analysis (memory footprint calculation, optimization techniques, monitoring)
+    - GPU benchmarking (SM utilization, Nsight profiling, theoretical vs actual performance)
+    - Attention mechanism benchmarks (standard vs Flash vs sparse attention, KV cache)
+    - Matrix multiplication optimization (naive vs blocked vs SIMD vs BLAS, 23x speedup)
+    - End-to-end model benchmarks (training, inference, autoregressive generation, scaling)
+    - Performance analysis workflow (profiling → optimization → validation loop)
+    - Optimization strategies (algorithmic, systems, hardware-specific)
+    - Production monitoring (metrics tracking, alerting thresholds, performance dashboards)
+    - Complete benchmark suite with expected results and analysis templates
 
 ### Fixed
 - Training loop batch data structuring
